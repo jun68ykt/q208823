@@ -7,18 +7,18 @@
   <!--切り替えjs-->
   <script type="text/javascript">
     function screenChange () {
-      for (var i=1; i<9; i++) {
-        var RoomNo = i + 1;
-        if (i < $(this).val()) {
-          $('#search_module_Room'+RoomNo).show();
+      for (var roomNo = 1; roomNo <= 9; roomNo++) {
+        if (roomNo <= $(this).val()) {
+          $('#search_module_Room' + roomNo).show();
         } else {
-          $('#search_module_Room'+RoomNo).hide();
+          $('#search_module_Room' + roomNo).hide();
         }
       }
     }
 
     $(function() {
       $('#changeSelect1').change(screenChange);
+      $('[id^="search_module_Room"]').hide();
     });
   </script>
   <!--切り替えjsここまで-->
