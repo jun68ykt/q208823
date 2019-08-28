@@ -1,0 +1,307 @@
+<!--切り替えjs-->
+<script type="text/javascript">
+  function screenChange (val) {
+    for (var i=1; i<9; i++) {
+      var RoomNo = i + 1;
+      if (i < val) {
+        $('#search_module_Room'+RoomNo).show();
+      } else {
+        $('#search_module_Room'+RoomNo).hide();
+      }
+    }
+  }
+
+</script>
+<!--切り替えjsここまで-->
+
+</head>
+<body>
+
+
+<div id="wrapper">
+
+  <form name="" action="get.php" method="POST">
+
+
+    部屋数
+    <div>
+      <select id="changeSelect1" name="RoomCount" onChange="screenChange();">
+        <option value="0">部屋数を選択してください</option>
+        <option value="1">１部屋</option>
+        <option value="2">２部屋</option>
+        <option value="3">３部屋</option>
+        <option value="4">４部屋</option>
+        <option value="5">５部屋</option>
+        <option value="6">６部屋</option>
+        <option value="7">７部屋</option>
+        <option value="8">８部屋</option>
+        <option value="9">９部屋</option>
+      </select>
+    </div>
+
+
+
+    <div class="boxArea">
+
+      <div class="box"></div>
+      <!--９部屋選択-->
+      <div id="search_module_Room1" class="box">
+        <td>
+          <select name="AdultCount[0]">
+            <option value="1" >大人1名</option>
+            <option value="2" >大人2名</option>
+            <option value="3" >大人3名</option>
+            <option value="4" >大人4名</option>
+          </select>
+        </td>
+        <td>
+          <select  name="ChildCount[0]">
+            <option value="0" >子供0名</option>
+            <option value="1" >子供1名</option>
+            <option value="2" >子供2名</option>
+            <option value="3" >子供3名</option>
+          </select>
+        </td>
+        <td>
+          <select name="InfantCount[0]">
+            <option value="0" >幼児0名</option>
+            <option value="1" >幼児1名</option>
+            <option value="2" >幼児2名</option>
+          </select>
+        </td>
+        <br />
+      </div>
+
+      <div id="search_module_Room2" class="box">
+        <td>
+          <select name="AdultCount[1]">
+            <option value="1" >大人1名</option>
+            <option value="2" >大人2名</option>
+            <option value="3" >大人3名</option>
+            <option value="4" >大人4名</option>
+          </select>
+        </td>
+        <td>
+          <select  name="ChildCount[1]">
+            <option value="0" >子供0名</option>
+            <option value="1" >子供1名</option>
+            <option value="2" >子供2名</option>
+            <option value="3" >子供3名</option>
+          </select>
+        </td>
+        <td>
+          <select name="InfantCount[1]">
+            <option value="0" >幼児0名</option>
+            <option value="1" >幼児1名</option>
+            <option value="2" >幼児2名</option>
+          </select>
+        </td>
+        <br />
+      </div>
+
+      <div id="search_module_Room3" class="box">
+        <td>
+          <select name="AdultCount[2]">
+            <option value="1" >大人1名</option>
+            <option value="2" >大人2名</option>
+            <option value="3" >大人3名</option>
+            <option value="4" >大人4名</option>
+          </select>
+        </td>
+        <td>
+          <select  name="ChildCount[2]">
+            <option value="0" >子供0名</option>
+            <option value="1" >子供1名</option>
+            <option value="2" >子供2名</option>
+            <option value="3" >子供3名</option>
+          </select>
+        </td>
+        <td>
+          <select name="InfantCount[2]">
+            <option value="0" >幼児0名</option>
+            <option value="1" >幼児1名</option>
+            <option value="2" >幼児2名</option>
+          </select>
+        </td>
+        <br />
+      </div>
+
+      <div id="search_module_Room4" class="box">
+
+        <td>
+          <select name="AdultCount[3]">
+            <option value="1" >大人1名</option>
+            <option value="2" >大人2名</option>
+            <option value="3" >大人3名</option>
+            <option value="4" >大人4名</option>
+          </select>
+        </td>
+        <td>
+          <select  name="ChildCount[3]">
+            <option value="0" >子供0名</option>
+            <option value="1" >子供1名</option>
+            <option value="2" >子供2名</option>
+            <option value="3" >子供3名</option>
+          </select>
+        </td>
+        <td>
+          <select name="InfantCount[3]">
+            <option value="0" >幼児0名</option>
+            <option value="1" >幼児1名</option>
+            <option value="2" >幼児2名</option>
+          </select>
+        </td>
+        <br />
+      </div>
+
+      <div id="search_module_Room5" class="box">
+
+        <td>
+          <select name="AdultCount[4]">
+            <option value="1" >大人1名</option>
+            <option value="2" >大人2名</option>
+            <option value="3" >大人3名</option>
+            <option value="4" >大人4名</option>
+          </select>
+        </td>
+        <td>
+          <select  name="ChildCount[4]">
+            <option value="0" >子供0名</option>
+            <option value="1" >子供1名</option>
+            <option value="2" >子供2名</option>
+            <option value="3" >子供3名</option>
+          </select>
+        </td>
+        <td>
+          <select name="InfantCount[4]">
+            <option value="0" >幼児0名</option>
+            <option value="1" >幼児1名</option>
+            <option value="2" >幼児2名</option>
+          </select>
+        </td>
+        <br />
+      </div>
+
+      <div id="search_module_Room6" class="box">
+        <td>
+          <select name="AdultCount[5]">
+            <option value="1" >大人1名</option>
+            <option value="2" >大人2名</option>
+            <option value="3" >大人3名</option>
+            <option value="4" >大人4名</option>
+          </select>
+        </td>
+        <td>
+          <select  name="ChildCount[5]">
+            <option value="0" >子供0名</option>
+            <option value="1" >子供1名</option>
+            <option value="2" >子供2名</option>
+            <option value="3" >子供3名</option>
+          </select>
+        </td>
+        <td>
+          <select name="InfantCount[5]">
+            <option value="0" >幼児0名</option>
+            <option value="1" >幼児1名</option>
+            <option value="2" >幼児2名</option>
+          </select>
+        </td>
+        <br />
+      </div>
+      <div id="search_module_Room7" class="box">
+        <td>
+          <select name="AdultCount[6]">
+            <option value="1" >大人1名</option>
+            <option value="2" >大人2名</option>
+            <option value="3" >大人3名</option>
+            <option value="4" >大人4名</option>
+          </select>
+        </td>
+        <td>
+          <select  name="ChildCount[6]">
+            <option value="0" >子供0名</option>
+            <option value="1" >子供1名</option>
+            <option value="2" >子供2名</option>
+            <option value="3" >子供3名</option>
+          </select>
+        </td>
+        <td>
+          <select name="InfantCount[6]">
+            <option value="0" >幼児0名</option>
+            <option value="1" >幼児1名</option>
+            <option value="2" >幼児2名</option>
+          </select>
+        </td>
+        <br />
+      </div>
+
+      <div id="search_module_Room8" class="box">
+        <td>
+          <select name="AdultCount[7]">
+            <option value="1" >大人1名</option>
+            <option value="2" >大人2名</option>
+            <option value="3" >大人3名</option>
+            <option value="4" >大人4名</option>
+          </select>
+        </td>
+        <td>
+          <select  name="ChildCount[7]">
+            <option value="0" >子供0名</option>
+            <option value="1" >子供1名</option>
+            <option value="2" >子供2名</option>
+            <option value="3" >子供3名</option>
+          </select>
+        </td>
+        <td>
+          <select name="InfantCount[7]">
+            <option value="0" >幼児0名</option>
+            <option value="1" >幼児1名</option>
+            <option value="2" >幼児2名</option>
+          </select>
+        </td>
+        <br />
+      </div>
+
+      <div id="search_module_Room9" class="box">
+        <td>
+          <select name="AdultCount[8]">
+            <option value="1" >大人1名</option>
+            <option value="2" >大人2名</option>
+            <option value="3" >大人3名</option>
+            <option value="4" >大人4名</option>
+          </select>
+        </td>
+        <td>
+          <select  name="ChildCount[8]">
+            <option value="0" >子供0名</option>
+            <option value="1" >子供1名</option>
+            <option value="2" >子供2名</option>
+            <option value="3" >子供3名</option>
+          </select>
+        </td>
+        <td>
+          <select name="InfantCount[8]">
+            <option value="0" >幼児0名</option>
+            <option value="1" >幼児1名</option>
+            <option value="2" >幼児2名</option>
+          </select>
+        </td>
+        <br />
+      </div>
+
+    </div>
+    <!--９部屋ここまで-->
+</div>
+<!--選択boxAreaDIV閉じ-->
+
+
+
+<p>
+  <input type="submit" value="検索する" >
+</p>
+
+</form>
+
+
+</div>
+<!-- wrapper-->
