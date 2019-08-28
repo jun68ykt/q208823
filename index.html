@@ -6,10 +6,10 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <!--切り替えjs-->
   <script type="text/javascript">
-    function screenChange (val) {
+    function screenChange () {
       for (var i=1; i<9; i++) {
         var RoomNo = i + 1;
-        if (i < val) {
+        if (i < $(this).val()) {
           $('#search_module_Room'+RoomNo).show();
         } else {
           $('#search_module_Room'+RoomNo).hide();
