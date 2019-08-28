@@ -3,31 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <title>Q208823</title>
-<!--切り替えjs-->
-<script type="text/javascript">
-  function screenChange (val) {
-    for (var i=1; i<9; i++) {
-      var RoomNo = i + 1;
-      if (i < val) {
-        $('#search_module_Room'+RoomNo).show();
-      } else {
-        $('#search_module_Room'+RoomNo).hide();
+  <!--切り替えjs-->
+  <script type="text/javascript">
+    function screenChange (val) {
+      for (var i=1; i<9; i++) {
+        var RoomNo = i + 1;
+        if (i < val) {
+          $('#search_module_Room'+RoomNo).show();
+        } else {
+          $('#search_module_Room'+RoomNo).hide();
+        }
       }
     }
-  }
 
-</script>
-<!--切り替えjsここまで-->
-
+  </script>
+  <!--切り替えjsここまで-->
 </head>
 <body>
-
-
 <div id="wrapper">
-
   <form name="" action="get.php" method="POST">
-
-
     部屋数
     <div>
       <select id="changeSelect1" name="RoomCount" onChange="screenChange();">
@@ -43,11 +37,7 @@
         <option value="9">９部屋</option>
       </select>
     </div>
-
-
-
     <div class="boxArea">
-
       <div class="box"></div>
       <!--９部屋選択-->
       <div id="search_module_Room1" class="box">
@@ -76,7 +66,6 @@
         </td>
         <br />
       </div>
-
       <div id="search_module_Room2" class="box">
         <td>
           <select name="AdultCount[1]">
@@ -103,7 +92,6 @@
         </td>
         <br />
       </div>
-
       <div id="search_module_Room3" class="box">
         <td>
           <select name="AdultCount[2]">
@@ -130,9 +118,7 @@
         </td>
         <br />
       </div>
-
       <div id="search_module_Room4" class="box">
-
         <td>
           <select name="AdultCount[3]">
             <option value="1" >大人1名</option>
@@ -158,9 +144,7 @@
         </td>
         <br />
       </div>
-
       <div id="search_module_Room5" class="box">
-
         <td>
           <select name="AdultCount[4]">
             <option value="1" >大人1名</option>
@@ -186,7 +170,6 @@
         </td>
         <br />
       </div>
-
       <div id="search_module_Room6" class="box">
         <td>
           <select name="AdultCount[5]">
@@ -239,7 +222,6 @@
         </td>
         <br />
       </div>
-
       <div id="search_module_Room8" class="box">
         <td>
           <select name="AdultCount[7]">
@@ -266,7 +248,6 @@
         </td>
         <br />
       </div>
-
       <div id="search_module_Room9" class="box">
         <td>
           <select name="AdultCount[8]">
@@ -293,22 +274,14 @@
         </td>
         <br />
       </div>
-
     </div>
     <!--９部屋ここまで-->
-<!--選択boxAreaDIV閉じ-->
-
-
-
-<p>
-  <input type="submit" value="検索する" >
-</p>
-
-</form>
-
-
+    <!--選択boxAreaDIV閉じ-->
+    <p>
+      <input type="submit" value="検索する" >
+    </p>
+  </form>
 </div>
 <!-- wrapper-->
-
 </body>
 </html>
