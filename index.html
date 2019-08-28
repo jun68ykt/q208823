@@ -17,6 +17,9 @@
       }
     }
 
+    $(function() {
+      $('#changeSelect1').change(screenChange)
+    });
   </script>
   <!--切り替えjsここまで-->
 </head>
@@ -25,7 +28,7 @@
   <form name="" action="get.php" method="POST">
     部屋数
     <div>
-      <select id="changeSelect1" name="RoomCount" onChange="screenChange();">
+      <select id="changeSelect1" name="RoomCount">
         <option value="0">部屋数を選択してください</option>
         <option value="1">１部屋</option>
         <option value="2">２部屋</option>
